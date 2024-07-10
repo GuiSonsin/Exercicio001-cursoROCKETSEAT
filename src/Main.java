@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
     ContaCorrente account = new ContaCorrente(001, 123, "Gui", "09062004",0 );
-    ContaCorrente accountTransfer = new ContaCorrente(002, 123, "Arthur", "23/03/2013",20 );
+    ContaCorrente accountTransfer = new ContaCorrente(002, 123, "Arthur", "23032013",20 );
 
     int op = 0;
 

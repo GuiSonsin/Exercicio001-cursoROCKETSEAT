@@ -1,10 +1,5 @@
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaCorrente {
@@ -12,7 +7,7 @@ public class ContaCorrente {
     private int numAgencia;
     private String nameCli;
     private float sale;
-    private String dateBirth; // colocar data do tipo Date
+    private String dateBirth;
     private boolean accountActive;
 
     public ContaCorrente(int numConta, int numAgencia, String nameCli, String dateBirth, float sale){
@@ -117,17 +112,17 @@ public class ContaCorrente {
         System.out.println("Nome Cliente: " + this.nameCli);
         System.out.println("Numero Conta: " + this.numConta);
         System.out.println("Numero Agencia: " + this.numAgencia);
-        System.out.println("Saldo: " + this.sale);
+        System.out.println("Saldo: R$" + this.sale);
 
         DateTimeFormatter saveFormatter = DateTimeFormatter.ofPattern("ddMMyyyy");  // salva do jeito "reto" de data que quero
         LocalDate date = LocalDate.parse(this.dateBirth, saveFormatter); // salvando
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); // depois passo para formatar do jeito com as barras
 
-        //LocalDate data = LocalDate.of(dia,mes,ano);  salvar por dia mes e ano
+        //LocalDate date = LocalDate.of(dia,mes,ano);  //salvar por dia mes e ano
 
         //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        //String dataFormatada = data.format(formatter);
+        //String dateFormatter = data.format(formatter);
 
 
         System.out.println("Data Nascimento: " + formatter.format(date));
