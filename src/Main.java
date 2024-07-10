@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-    ContaCorrente account = new ContaCorrente(001, 123, "Gui", "09/06/2004",0 );
+    ContaCorrente account = new ContaCorrente(001, 123, "Gui", "09062004",0 );
     ContaCorrente accountTransfer = new ContaCorrente(002, 123, "Arthur", "23/03/2013",20 );
 
     int op = 0;
