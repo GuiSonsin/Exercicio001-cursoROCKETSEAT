@@ -7,10 +7,10 @@ public class ContaCorrente {
     private int numAgencia;
     private String nameCli;
     private float sale;
-    private LocalDate dateBirth;
+    private String dateBirth;
     private boolean accountActive;
 
-    public ContaCorrente(int numConta, int numAgencia, String nameCli, LocalDate dateBirth, float sale){
+    public ContaCorrente(int numConta, int numAgencia, String nameCli, String dateBirth, float sale){
         this.numConta = numConta;
         this.numAgencia = numAgencia;
         this.nameCli = nameCli;
@@ -51,11 +51,11 @@ public class ContaCorrente {
         this.nameCli = nameCli;
     }
 
-    public LocalDate getDateBirth() {
+    public String getDateBirth() {
         return dateBirth;
     }
 
-    public void setDateBirth(LocalDate dateBirth) {
+    public void setDateBirth(String dateBirth) {
         this.dateBirth = dateBirth;
     }
 
