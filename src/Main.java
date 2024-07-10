@@ -9,7 +9,7 @@ public class Main {
 
     int op = 0;
 
-        while(op != 6){
+        while(op != 7){
             System.out.println("\n************************");
             System.out.println("1 - Sacar ");
             System.out.println("2 - Depositar ");
