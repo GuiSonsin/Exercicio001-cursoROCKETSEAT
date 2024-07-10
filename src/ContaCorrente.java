@@ -119,10 +119,10 @@ public class ContaCorrente {
         System.out.println("Numero Agencia: " + this.numAgencia);
         System.out.println("Saldo: " + this.sale);
 
-        DateTimeFormatter saveFormatter = DateTimeFormatter.ofPattern("ddMMyyyy");
-        LocalDate date = LocalDate.parse(this.dateBirth, saveFormatter);
+        DateTimeFormatter saveFormatter = DateTimeFormatter.ofPattern("ddMMyyyy");  // salva do jeito "reto" de data que quero
+        LocalDate date = LocalDate.parse(this.dateBirth, saveFormatter); // salvando
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); // depois passo para formatar do jeito com as barras
 
         //LocalDate data = LocalDate.of(dia,mes,ano);  salvar por dia mes e ano
 
